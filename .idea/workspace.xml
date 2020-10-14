@@ -17,8 +17,8 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../kata-calculator/src/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,10 +29,25 @@
       <file leaf-file-name="T.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../kata-calculator/src/T.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="376">
+              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1948#1949#0" expanded="true" />
+                <element signature="e#1987#1988#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="A.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../kata-calculator/src/A.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#64#65#0" expanded="true" />
+                <element signature="e#96#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,6 +76,7 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Calculator.java" />
         <option value="$PROJECT_DIR$/../kata-calculator/src/Calculator.java" />
+        <option value="$PROJECT_DIR$/../kata-calculator/src/A.java" />
         <option value="$PROJECT_DIR$/../kata-calculator/src/T.java" />
       </list>
     </option>
@@ -118,6 +134,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.T">
+    <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="A" />
+      <module name="kata-calculator" />
+      <shortenClasspath name="NONE" />
+    </configuration>
     <configuration name="T" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="T" />
@@ -149,10 +171,12 @@
     <list>
       <item itemvalue="Application.kata" />
       <item itemvalue="Application.T" />
+      <item itemvalue="Application.A" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.T" />
+        <item itemvalue="Application.A" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +212,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602705268102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed. If there are multiple negatives, show all of them in the exception message.">
+      <created>1602705862984</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602705862984</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed. If there are multiple negatives, show all of them in the exception message.">
+      <created>1602705887746</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602705887746</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2">
+      <created>1602706004945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602706004945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -197,14 +242,14 @@
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.7838577" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.29096046" />
       <window_info anchor="right" id="Codota" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50067115" side_tool="true" weight="0.32909605" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.3064972" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.23305085" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="2" />
@@ -231,7 +276,9 @@
     <MESSAGE value="Create a simple String calculator with a method signature: int Add(string numbers)" />
     <MESSAGE value="Allow the Add method to handle new lines between numbers (instead of commas)." />
     <MESSAGE value="Support different delimiters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Support different delimiters" />
+    <MESSAGE value="Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed. If there are multiple negatives, show all of them in the exception message." />
+    <MESSAGE value="Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../kata-calculator/src/Calculator.java">
@@ -256,10 +303,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../kata-calculator/src/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#64#65#0" expanded="true" />
+            <element signature="e#96#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../kata-calculator/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -268,10 +326,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../kata-calculator/src/T.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        <state relative-caret-position="376">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1948#1949#0" expanded="true" />
+            <element signature="e#1987#1988#0" expanded="true" />
           </folding>
         </state>
       </provider>

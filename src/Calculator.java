@@ -31,8 +31,15 @@ public class Calculator {
         char delimiter = ' ';
         String[] delimiterRemoved;
         if(numbers.startsWith("//")){
-            delimiter = numbers.charAt(2);
-            delimiterRemoved = delimiterRemoved1(numbers.substring(4), Character.toString(delimiter));
+            if(numbers.charAt(2)=='['){
+                int indexValue = getIndex(numbers);
+                String delimiterString = numbers.substring(3, indexValue-1);
+                delimiterRemoved = delimiterRemoved1(numbers.substring(indexValue+1), delimiterString);
+            } else{
+                delimiter = numbers.charAt(2);
+                delimiterRemoved = delimiterRemoved1(numbers.substring(4), Character.toString(delimiter));
+            }
+
         } else {
             delimiterRemoved = delimiterRemoved1(numbers, ",|\n");
         }
@@ -47,9 +54,18 @@ public class Calculator {
         return num;
     }
 
+    private static int getIndex(String numbers){
+        char[] obj = numbers.toCharArray();
+        for(int i=0; i<numbers.length(); i++){
+            if(obj[i]=='\n'){
+                return i;
+            }
+        }
+        return 0;
+    }
+
     private static String[] delimiterRemoved1(String numbers, String regix){
-        String[] delimiterRemoved = numbers.split(regix);
-        return delimiterRemoved;
+        return numbers.split(regix);
     }
 
 }
