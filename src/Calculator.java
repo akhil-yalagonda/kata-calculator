@@ -2,6 +2,10 @@ import java.util.*;
 import java.lang.*;
 
 public class Calculator {
+
+    private static String negativeNumbersString = "";
+    private static Boolean isNegative = false;
+
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
         System.out.println(add(obj.nextLine()));
@@ -12,6 +16,9 @@ public class Calculator {
         if(!numbers.equals("")){
             int[] num = getNumbers(numbers);
             for(int i=0; i<num.length; i++){
+                if(isNegative){
+                    throw new IllegalArgumentException(negativeNumbersString);
+                }
                 sum = sum+num[i];
             }
         }
@@ -30,6 +37,10 @@ public class Calculator {
         int[] num = new int[delimiterRemoved.length];
         for(int i=0; i< num.length; i++){
             num[i] = Integer.parseInt(delimiterRemoved[i]);
+            if(num[i]<0){
+                isNegative=true;
+                negativeNumbersString = negativeNumbersString +" "+num[i];
+            }
         }
         return num;
     }
