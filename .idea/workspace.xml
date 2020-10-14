@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc38ad1b-3d30-438c-94ff-a94bbc6b1ab0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../kata-calculator/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata-calculator/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kata-calculator/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata-calculator/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kata-calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kata-calculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kata-calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kata-calculator/src/Calculator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,8 +17,8 @@
       <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../kata-calculator/src/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="493">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +29,8 @@
       <file leaf-file-name="T.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../kata-calculator/src/T.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" column="61" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
+            <state relative-caret-position="170">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.kata">
+  <component name="RunManager" selected="Application.T">
     <configuration name="T" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="T" />
@@ -177,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602701953871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Allow the Add method to handle new lines between numbers (instead of commas).">
+      <created>1602705173933</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602705173933</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -218,7 +222,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create a simple String calculator with a method signature: int Add(string numbers)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a simple String calculator with a method signature: int Add(string numbers)" />
+    <MESSAGE value="Allow the Add method to handle new lines between numbers (instead of commas)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Allow the Add method to handle new lines between numbers (instead of commas)." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../kata-calculator/src/Calculator.java">
@@ -245,8 +250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../kata-calculator/src/T.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="61" />
+        <state relative-caret-position="170">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -255,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../kata-calculator/src/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="493">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

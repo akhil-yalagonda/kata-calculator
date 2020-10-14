@@ -19,7 +19,14 @@ public class Calculator {
     }
 
     private static int[] getNumbers(String numbers){
-        String[] delimiterRemoved = delimiterRemoved1(numbers, ",|\n");
+        char delimiter = ' ';
+        String[] delimiterRemoved;
+        if(numbers.startsWith("//")){
+            delimiter = numbers.charAt(2);
+            delimiterRemoved = delimiterRemoved1(numbers.substring(4), Character.toString(delimiter));
+        } else {
+            delimiterRemoved = delimiterRemoved1(numbers, ",|\n");
+        }
         int[] num = new int[delimiterRemoved.length];
         for(int i=0; i< num.length; i++){
             num[i] = Integer.parseInt(delimiterRemoved[i]);
