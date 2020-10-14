@@ -17,7 +17,7 @@ public class Calculator {
             int[] num = getNumbers(numbers);
             for(int i=0; i<num.length; i++){
                 if(isNegative){
-                    throw new IllegalArgumentException(negativeNumbersString);
+                    throw new IllegalArgumentException("negatives not allowed" + negativeNumbersString);
                 }
                 sum = sum+num[i];
             }
