@@ -19,7 +19,9 @@ public class Calculator {
                 if(isNegative){
                     throw new IllegalArgumentException("negatives not allowed" + negativeNumbersString);
                 }
-                sum = sum+num[i];
+                if(num[i]<=1000){
+                    sum = sum+num[i];
+                }
             }
         }
         return sum;
