@@ -33,8 +33,13 @@ public class Calculator {
         if(numbers.startsWith("//")){
             if(numbers.charAt(2)=='['){
                 int indexValue = getIndex(numbers);
-                String delimiterString = numbers.substring(3, indexValue-1);
-                delimiterRemoved = delimiterRemoved1(numbers.substring(indexValue+1), delimiterString);
+                if(hasMultipleDelimiter(numbers)){
+                    String delimiterString = getMultiDelimiter(numbers);
+                    delimiterRemoved = delimiterRemoved1(numbers.substring(indexValue+1), delimiterString);
+                } else {
+                    String delimiterString = numbers.substring(3, indexValue - 1);
+                    delimiterRemoved = delimiterRemoved1(numbers.substring(indexValue + 1), delimiterString);
+                }
             } else{
                 delimiter = numbers.charAt(2);
                 delimiterRemoved = delimiterRemoved1(numbers.substring(4), Character.toString(delimiter));
@@ -52,6 +57,25 @@ public class Calculator {
             }
         }
         return num;
+    }
+
+    private static String getMultiDelimiter(String numbers){
+        String delimeter = "";
+        String delimiterString = numbers.substring(2,getIndex(numbers));
+        String[] multiDelimeter = delimiterString.split("]");
+        for(int i=0; i<multiDelimeter.length; i++){
+            delimeter =delimeter+multiDelimeter[i].substring(1)+"|";
+        }
+        return delimeter.substring(0,delimeter.length()-1);
+    }
+
+    private static Boolean hasMultipleDelimiter(String numbers){
+        String delimiterString = numbers.substring(2,getIndex(numbers));
+        String[] multiDilimeter = delimiterString.split("]");
+        if(multiDilimeter.length>1){
+            return true;
+        }
+        return false;
     }
 
     private static int getIndex(String numbers){
