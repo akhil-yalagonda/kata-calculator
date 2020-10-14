@@ -19,7 +19,7 @@ public class Calculator {
     }
 
     private static int[] getNumbers(String numbers){
-        String[] delimiterRemoved = delimiterRemoved1(numbers);
+        String[] delimiterRemoved = delimiterRemoved1(numbers, ",|\n");
         int[] num = new int[delimiterRemoved.length];
         for(int i=0; i< num.length; i++){
             num[i] = Integer.parseInt(delimiterRemoved[i]);
@@ -27,8 +27,8 @@ public class Calculator {
         return num;
     }
 
-    private static String[] delimiterRemoved1(String numbers){
-        String[] delimiterRemoved = numbers.split(",");
+    private static String[] delimiterRemoved1(String numbers, String regix){
+        String[] delimiterRemoved = numbers.split(regix);
         return delimiterRemoved;
     }
 
